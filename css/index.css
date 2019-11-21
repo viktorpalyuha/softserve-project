@@ -1,0 +1,329 @@
+:root {
+	background-color: #00000c;
+	color: #ffffff;
+	--additional-color: #dacaf8;
+	scroll-behavior: smooth;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header, nav, div, ul, #our-mission {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+header .logo, .company-name {
+	display: none;
+}
+
+.logo {
+	max-width: 62px;
+	grid-column: 2 / 3;
+	justify-self: center;
+}
+
+.company-name {
+	margin: 0;
+	font-size: 26px;
+	grid-column: 1 / 4;
+	justify-self: center;
+}
+
+.burger-menu {
+	justify-self: flex-end;
+	grid-column: 3 / 4;
+	visibility: hidden;
+}
+
+nav {
+	display: none;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	background: rgb(18,65,100);
+	background: radial-gradient(circle, rgba(18,65,100,1) 0%, rgba(28,7,34,1) 100%);
+	font-size: 30px;
+	padding: 10px 0px;
+}
+
+nav a {
+	color: var(--additional-color);
+	text-decoration: none;
+	padding: 11px 10px;
+}	
+
+nav a:hover {
+	background-color: #00000c;
+	color: #fef67f;
+}
+
+#main {
+	background-image: url(../img/main.jpg);
+	background-position: center;
+	background-size: cover;
+	color: var(--additional-color);
+	min-height: 600px;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -18px;
+}
+
+#main p {
+	font-size: 3.5rem;
+	text-shadow: 2px 3px 4px #00000c;
+	padding-right: 25px;
+	display: none;
+}
+
+#our-mission h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+#our-mission p {
+	text-align: justify;
+	font-size: 1.5rem;
+	padding: 0px 40px;
+}
+
+
+#napchair {
+	background-color: #ffffff;
+	color: #00000c;
+}
+
+#napchair h1 {
+	text-align: center;
+	font-size: 3rem;
+}
+
+#napchair h2 {
+	margin: -15px 0px;
+}
+
+#napchair > p {
+	text-align: center;
+	font-size: 1.9rem;
+	padding: 0px 96px;
+}
+
+#napchair img {
+	max-height: 237px;
+}
+
+.napchair-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  font-size: 24px;
+}
+
+#napchair .comfort p {
+	padding: 0px 6.7% 0px 10% ;
+}
+
+#napchair .design p {
+	padding: 0px 10% 0px 6.7%;
+}
+.technology {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+.technology p {
+	padding-right: 24.6%;
+	padding-left: 24.6%;
+}
+
+#contact-us h1 {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.contact-us-images img {
+	height: auto;
+	width: 100%;
+	max-width: 537px;
+}
+
+.contact-us-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.contact-us-form {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-us-form .your-name, .email {
+	min-width: 230px;
+	min-height: 38px;
+	border: 2px solid white;
+	background-color: transparent;
+	font-size: 0.8rem;
+	color: white;
+	padding-left: 5px;
+}
+
+::placeholder {
+	color:white;
+}
+
+.contact-us-form .your-message{
+	width: 100%;
+	height: auto ;
+	max-width: 230px;
+	min-height: 189px;
+	border: 2px solid white;
+	background-color: transparent;
+	color: white;
+	resize: none;
+	text-decoration: none;
+	padding: 1px 0px 1px 5px;
+	font-family: Times New Roman;
+}
+
+.contact-us-form .submit-send {
+	max-width: 110px;
+	padding: 2px 20px;
+	align-self: center;
+	background-color: transparent;
+	color: white;
+	border: 2px solid white;
+	border-radius: 6px;
+	font-weight: normal;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	font-weight: bold;
+}
+
+textarea:focus, input:focus {
+	outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px black inset !important;
+    -webkit-text-fill-color: white !important;
+}
+
+.contact-us-images {
+	display: grid;
+}
+
+hr {
+	margin: 0;
+	margin-top: 2px;
+}
+
+footer a {
+	color: var(--additional-color);
+	align-self: center;
+}
+
+footer {
+	color: var(--additional-color);
+}
+
+.instagram-logo {
+	height: auto;
+	width: 100%;
+	max-width: 30px;
+	justify-self: center;
+}
+
+.facebook-logo {
+	height: auto;
+	width: 30px;
+	margin-top: 4px;
+	justify-self: center;
+}
+
+.footer-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.footer-socials {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	padding-top: 8px;
+}
+
+.working-hours {
+	order: 1;
+	justify-self: end;
+	align-self: start;
+	text-align: end;
+}
+
+.working-hours p {
+	margin: 0;
+	padding-top: 8px;
+	padding-right: 24px;
+}
+
+.copyrights {
+	align-self: start;
+	justify-self: center;
+	grid-row: 2 / 2;
+	grid-column: 1 / 4;
+}
+
+.clock {
+	display: flex;
+	justify-self: center;
+	padding-top: 8px;
+}
+
+.copyrights p {
+	margin: 0px;
+}
+
+.copyrights-button {
+    max-width: 110px;
+	padding: 2px 20px;
+	background-color: transparent;
+	color: var(--additional-color);
+	border: 2px solid var(--additional-color);
+	border-radius: 6px;
+	font-weight: normal;
+	transition: all 0.3s;
+	cursor: pointer;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.copyrights-button:hover {
+	background-color: var(--additional-color);
+	color: black;
+	border: 2px solid black;
+	font-weight: bold;
+}
