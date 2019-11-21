@@ -198,7 +198,7 @@ form {
 	resize: none;
 	text-decoration: none;
 	padding: 1px 0px 1px 5px;
-	font-family: Times New Roman;
+	font-family: "Times New Roman";
 }
 
 .contact-us-form .submit-send {
